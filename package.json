@@ -1,4 +1,4 @@
-{ 
+{
   "name": "dino",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all -p client server",
     "client": "react-scripts start",
     "server": "json-server --port 3001 --watch server/db.json",
     "build": "react-scripts build",
@@ -26,7 +26,7 @@
       "react-app/jest"
     ]
   },
-  "browserslist": { 
+  "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
@@ -37,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "json-server": "^0.16.3",
+    "npm-run-all": "^4.1.5"
   }
 }
