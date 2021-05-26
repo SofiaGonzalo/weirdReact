@@ -1,50 +1,85 @@
-import React from "react"
-import Hero from "../../components/Hero"
-import Badge from "../../components/Badge"
-import "./NewBadge.css"
+import React from "react";
+import Hero from "../../components/Hero";
+import Badge from "../../components/Badge";
+import "./NewBadge.css";
+import BadgeForm from "../../components/BadgeForm";
+import api from "../../libs/api";
 
-class NewBadge extends React.Component{
+class NewBadge extends React.Component {
+  state = {
+    loading: false,
+    error: null,
+    form: {
+      header_picture: "",
+      profile_picture: "",
+      name: "",
+      age: "",
+      city: "",
+      followers: "",
+      likes: "",
+      post: "",
+    },
+  };
 
-    state = {
-        loading: false,
-        error: null,
-        form:{
-            header_picture:"",
-            profile_picture:"",
-            name:"",
-            age:"",
-            city:"",
-            followers:"",
-            likes:"",
-            post:"",
-        }
+  handleChange = (event) => {
+    this.setState({
+      form: {
+        ...this.state.form,
+        [event.target.name]: event.target.value,
+      },
+    });
+  };
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    this.setState({ loading: true, error: null });
+
+    try {
+      await api.badges.create(this.state.form);
+      this.setState({ loading: false, error: null });
+      this.props.history.push("/");
+    } catch (error) {
+      this.setState({ laoding: false, error: error });
     }
+  };
 
-    render(){
-        return(
-            <React.Fragment>
-                <Hero h={"15vh"}></Hero>
-                <div className="container">
-                    <div className="col">
-                        <Badge
-                            header_picture = {this.state.form.header_picture || "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XTup0yLdQam3cMUmk6W4XAHaEK%26pid%3DApi&f=1"}
-                            profile_picture = {this.state.form.profile_picture || "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg1.wikia.nocookie.net%2F__cb20140107172614%2Fsuper-smash-bros-iv-fanfiction%2Fimages%2F9%2F9f%2FYoshi_Egg_Tilted_Artwork.png&f=1&nofb=1"}
-                            name = {this.state.form.name || "Jack Jackonson"}
-                            age = {this.state.form.age || "7"}
-                            city = {this.state.form.city || "Chihuahua"} 
-                            followers = {this.state.form.followers || "0"}
-                            likes = {this.state.form.likes || "0"}
-                            post = {this.state.form.post || "0"}
-                        ></Badge>
-                    </div>
-                    <div className="col">
+  render() {
+    return (
+      <React.Fragment>
+        <Hero h={"15vh"}></Hero>
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              <Badge
+                header_picture={
+                  this.state.form.header_picture ||
+                  "https://data.whicdn.com/images/352297214/original.jpg"
+                }
+                profile_picture={
+                  this.state.form.profile_picture ||
+                  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.1dUw744EIKG9Ur7shsw1EwHaHa%26pid%3DApi&f=1"
+                }
+                name={this.state.form.name || "Anonymous"}
+                age={this.state.form.age || "?"}
+                city={this.state.form.city || "Unknown"}
+                followers={this.state.form.followers || "0"}
+                likes={this.state.form.likes || "0"}
+                post={this.state.form.post || "0"}
+              ></Badge>
+            </div>
 
-                    </div>
-                </div>
-            </React.Fragment>
-        )
-    }
-
+            <div className="col-6">
+              <BadgeForm
+                onChange={this.handleChange}
+                onSubmit={this.handleSubmit}
+                formValues={this.state.form}
+              ></BadgeForm>
+            </div>
+          </div>
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 
 export default NewBadge;
