@@ -6,11 +6,11 @@
     align-items: center;
     justify-content: center;
     color: lightgray;
-    background-color: #009548;
+    background-color: #1C192E;
     font-weight: 800;
     font-variant: small-caps;
 
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     z-index: 100;
 }
