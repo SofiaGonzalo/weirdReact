@@ -3,7 +3,8 @@
     align-content: center;
     height: 60px;
     width: 100%;
-    border-bottom: 1px solid lightblue;
+    border-bottom: 1px solid rgba( 58, 177, 207, 2);
+    background-color: rgba(28, 25, 46,0.9);
 }
 
 .Header img{
