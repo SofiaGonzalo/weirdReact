@@ -1,16 +1,26 @@
 import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import Layout from "./pages/layout/Layout";
-import Main from "./pages/main/Main"; 
-import Badge from "./components/Badge"
-import NewBadge from "./pages/NewBadge/NewBadge.jsx";
+import Main from "./pages/main/Main";
+import NewBadge from "./pages/NewBadge/NewBadge";
+import login from "./pages/login/login"
+import signUp from "./pages/signup/signup"
+import notFound from "./pages/notFound/notFound"
 
 function App() {
   return (
-    <React.Fragment>
-        <Layout>
-          <NewBadge></NewBadge>
-        </Layout>
-    </React.Fragment>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Main}></Route>
+          <Route exact path="/new" component={NewBadge}></Route>
+          <Route exact path="/log" component={login}></Route>
+          <Route exact path="/sign" component={signUp}></Route>
+          <Route exact path="/notFound" component={notFound}></Route>
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
