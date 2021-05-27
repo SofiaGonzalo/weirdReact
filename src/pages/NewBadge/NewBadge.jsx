@@ -46,7 +46,7 @@ class NewBadge extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Hero h={"15vh"}></Hero>
+        {/* <Hero h={"15vh"}></Hero> */}
         <div className="container">
           <div className="row">
             <div className="col-6">
