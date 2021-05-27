@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/new" component={NewBadge}></Route>
           <Route exact path="/log" component={login}></Route>
           <Route exact path="/sign" component={signUp}></Route>
-          <Route exact path="/notFound" component={notFound}></Route>
+          <Route component={notFound}></Route>
         </Switch>
       </Layout>
     </BrowserRouter>

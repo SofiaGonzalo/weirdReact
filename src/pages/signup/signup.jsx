@@ -31,7 +31,7 @@ class signUp extends React.Component {
                   name="password"
                 />
 
-                <button type="submit" className="Submit__button">
+                <button type="submit" className="Submit__button" Link={"/log"}>
                   I am ready
                 </button>
               </div>

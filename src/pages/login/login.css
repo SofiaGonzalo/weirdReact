@@ -11,7 +11,7 @@
     border-width: 5px;
     border-style: inset;
 
-    position: absolute;
+    /* position: absolute; */
 
     background-color: rgba(28, 25, 46, 0.8);
 
@@ -21,11 +21,13 @@
 .login-form{
     display: flex;
     justify-content: center;
-    margin: 0 25%;
+    margin: 0 auto;
     background-image: url();
 }
 
-body{
-    width: 100%;
-    background-image: url("https://web.archive.org/web/20091018221013/http://www.geocities.com/chathannoorstgeorge/background4.gif");
+.login-button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
 }

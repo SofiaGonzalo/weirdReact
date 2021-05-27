@@ -1,6 +1,6 @@
 import React from "react";
 import "./login.css";
-import Hero from "../../components/Hero";
+import {Link} from "react-router-dom"
 
 class login extends React.Component {
   render() {
@@ -36,6 +36,10 @@ class login extends React.Component {
 
           </div>
         </div>
+
+        <Link className="Button login-button" to="/sign">
+                <p>I don't have an account :(</p>
+              </Link> 
       </React.Fragment>
     );
   }
