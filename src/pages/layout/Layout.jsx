@@ -2,6 +2,7 @@ import React from "react"
 import './Layout.css'
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import "../style/body.css"
 
 function Layout(props){
     return(
