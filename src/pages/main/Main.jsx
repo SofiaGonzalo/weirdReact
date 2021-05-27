@@ -10,7 +10,7 @@ const Main = (props) => {
 
                 <div className="Main__content">
                     <h1 className="Main__title">{props.title || "Welcome"}</h1>
-                    <Button contentText={"Click 4 fun"} Link={"/new"}></Button> {/* Button */} 
+                    <Button contentText={"Don't click here"} Link={"/new"}></Button> {/* Button */} 
                 </div>
 
                 <Hero h={"88vh"}></Hero>  {/* Image  */}
