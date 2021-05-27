@@ -1,0 +1,31 @@
+.loginForm{
+    /* display: flex;
+    justify-content: center; */
+
+    width: 450px;
+    padding: 30px;
+    margin: 30px;
+
+    /* border-radius: 10px; */
+    border: 1px solid #2cd4a5;
+    border-width: 5px;
+    border-style: inset;
+
+    position: absolute;
+
+    background-color: rgba(28, 25, 46, 0.8);
+
+    color: white;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    margin: 0 25%;
+    background-image: url();
+}
+
+body{
+    width: 100%;
+    background-image: url("https://web.archive.org/web/20091018221013/http://www.geocities.com/chathannoorstgeorge/background4.gif");
+}
