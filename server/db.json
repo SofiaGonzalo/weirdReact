@@ -1,0 +1,26 @@
+{
+  "badges": [
+    {
+      "header_picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.zZ8ND1yELbXFkvf6huadLwHaFj%26pid%3DApi&f=1",
+      "profile_picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.oUTuXmT69MoFSTFqz7ba0AHaE7%26pid%3DApi&f=1",
+      "name": "Jack",
+      "age": "7",
+      "city": "Chihuahua",
+      "followers": "",
+      "likes": "",
+      "post": "",
+      "id": 2
+    },
+    {
+      "header_picture": "",
+      "profile_picture": "",
+      "name": "",
+      "age": "",
+      "city": "",
+      "followers": "",
+      "likes": "",
+      "post": "",
+      "id": 3
+    }
+  ]
+}
