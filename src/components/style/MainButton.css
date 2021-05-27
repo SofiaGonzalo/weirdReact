@@ -18,10 +18,10 @@
 
 .Button:hover{
     background-color: white;
-    border: 2px solid teal;
+    border: 2px solid #e42751;
     font-weight: bold;
 }
 
 .Button:hover p{
-    color: teal;
+    color: #e42751;
 }
