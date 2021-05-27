@@ -5,6 +5,10 @@
     min-height: 450px;
     border-radius: 15px;
     box-shadow: 0px 0px 40px 0px rgba(28, 25, 46, 0.4);
+
+    background-color: rgba(28, 25, 46, 0.8);
+
+    color: white;
 }
 
 .Badge__header{
@@ -58,17 +62,17 @@
 
 .Badge__info{
     display: flex;
-    border-top: 1px solid rgba(28, 25, 46, 0.7);
+    /* border-top: 1px solid rgba(28, 25, 46, 0.7); */
 }
 
 .Badge__info p{
     font-weight: 100;
     font-size: smaller;
-    color: rgba(28, 25, 46, 0.7);
+    color: rgba( 240, 239, 225, 0.7);
 }
 
 i{
     font-style: normal;
     font-weight: 100;
-    color: rgba(28, 25, 46, 0.7);
+    color: rgba( 240, 239, 225, 0.7);
 }
