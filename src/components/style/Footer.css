@@ -10,7 +10,7 @@
     font-weight: 800;
     font-variant: small-caps;
 
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
     z-index: 100;
 }
