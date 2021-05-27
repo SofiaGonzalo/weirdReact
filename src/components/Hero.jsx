@@ -1,18 +1,18 @@
 import React from "react";
-import react from "react";
 import "./style/Hero.css";
-import HeroImage from "../images/hero_image.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = (props) => {
   return (
     <React.Fragment>
       <div className="Hero">
-        <div className="Hero__color_filter" style={{ height: props.h }}></div>
-        <div className="Hero__img" style={{ height: props.h }}>
-          <img
-            src="https://images.pexels.com/photos/6004828/pexels-photo-6004828.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt="background"
-          />
+        <div className="Hero__color_filter" style={{ height: props.h }}>
+          <div className="Hero__img" style={{ height: props.h }}>
+            <img
+              src="https://web.archive.org/web/20091018221013/http://www.geocities.com/chathannoorstgeorge/background4.gif"
+              alt="background"
+            />
+          </div>
         </div>
       </div>
     </React.Fragment>
