@@ -1,12 +1,17 @@
 .BadgeForm{
     width: 450px;
-    padding: 50px;
+    padding: 30px;
+    height: inherit;
+    margin: 30px;
 
     border-radius: 10px;
-    border: 1px solid #2cd4a5
-    ;
+    border: 1px solid #2cd4a5;
     border-width: 5px;
     border-style: inset;
+
+    background-color: rgba(28, 25, 46, 0.8);
+
+    color: white;
 }
 
 .Submit__button{
@@ -16,11 +21,11 @@
     border-radius: 5px;
     display: block;
     align-self: center;
-    border: 1px solid  #3ab1cf ;
+    border: 1px solid   #e42751  ;
 }
 
 .Submit__button:hover{
-    background-color: #3ab1cf;
+    background-color:  #e42751 ;
     color: white;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }
