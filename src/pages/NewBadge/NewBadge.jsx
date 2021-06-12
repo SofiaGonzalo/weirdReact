@@ -10,8 +10,8 @@ class NewBadge extends React.Component {
     loading: false,
     error: null,
     form: {
-      header_picture: "",
-      profile_picture: "",
+      header_img_url: "",
+      profile_picture_url: "",
       name: "",
       age: "",
       city: "",
@@ -51,12 +51,12 @@ class NewBadge extends React.Component {
           <div className="row">
             <div className="col-6">
               <Badge
-                header_picture={
-                  this.state.form.header_picture ||
+                header_img_url={
+                  this.state.form.header_img_url ||
                   "https://data.whicdn.com/images/352297214/original.jpg"
                 }
-                profile_picture={
-                  this.state.form.profile_picture ||
+                profile_picture_url={
+                  this.state.form.profile_picture_url ||
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.1dUw744EIKG9Ur7shsw1EwHaHa%26pid%3DApi&f=1"
                 }
                 name={this.state.form.name || "Anonymous"}

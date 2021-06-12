@@ -10,12 +10,12 @@ class Badge extends React.Component {
         <div className="Badge m-5 flex-column">
 
           <div className="Badge__header">
-            <img src={this.props.header_picture} alt="Header background" />
+            <img src={this.props.header_img_url} alt="Header background" />
           </div>
 
           <div className="Badge__userInfo container mt-5 mb-1">
             <div class="Badge__userImage">
-              <img src={this.props.profile_picture} alt="profile_picture" />
+              <img src={this.props.profile_picture_url} alt="profile_picture_url" />
             </div>
           </div>
 
