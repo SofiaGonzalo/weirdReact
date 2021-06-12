@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/new" component={NewBadge}></Route>
           <Route exact path="/log" component={login}></Route>
           <Route exact path="/sign" component={signUp}></Route>
+          <Route exact path="/badges" component={Badges}></Route>
           <Route component={notFound}></Route>
-          <Route exact path="/badges" component="Badges"></Route>
         </Switch>
       </Layout>
     </BrowserRouter>
