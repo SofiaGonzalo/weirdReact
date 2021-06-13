@@ -5,7 +5,7 @@ class BadgesListItem extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="BadgeListItem mt-5">
+        <div className="BadgesListItem mt-5">
           <div className="col-5">
             <div className="Item__profilePicture">
               <img
@@ -22,7 +22,7 @@ class BadgesListItem extends React.Component {
           </div>
           <div className="col-7">
             <div className="row">
-              <h4 className="text-center mt-3">
+              <h4 className="text-center mt-4">
                 {this.props.badge.name} <i>{this.props.badge.age}</i>
               </h4>
               <p className="text-center">{this.props.badge.city}</p>
