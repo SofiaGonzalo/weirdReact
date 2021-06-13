@@ -4,6 +4,7 @@ import api from "../../libs/fetch";
 import Footer from "../../components/Footer"
 import BadgesList from "../../components/BadgesList";
 import SkeletonItem from "../../components/SkeletonItem";
+import Button from "../../components/MainButton"
 
 class Badges extends React.Component {
   state = {
@@ -52,7 +53,11 @@ class Badges extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="Badges__caontainer"></div>
+        <div className="Badges__caontainer">
+          <div className="Badges__button">
+            <Button></Button>
+          </div>
+        </div>
         <BadgesList badges={this.state.data}></BadgesList>
         {/* <Footer s={this.state.handle_footer}></Footer> */}
       </React.Fragment>
