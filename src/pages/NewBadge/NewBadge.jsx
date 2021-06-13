@@ -3,7 +3,8 @@ import Hero from "../../components/Hero";
 import Badge from "../../components/Badge";
 import "./NewBadge.css";
 import BadgeForm from "../../components/BadgeForm";
-import api from "../../libs/api";
+import api from "../../libs/fetch"; 
+import Footer from "../../components/Footer"
 
 class NewBadge extends React.Component {
   state = {
@@ -18,6 +19,7 @@ class NewBadge extends React.Component {
       followers: "",
       likes: "",
       post: "",
+      posts: "",
     },
   };
 
@@ -37,7 +39,7 @@ class NewBadge extends React.Component {
     try {
       await api.badges.create(this.state.form);
       this.setState({ loading: false, error: null });
-      this.props.history.push("/");
+      this.props.history.push("/badges");
     } catch (error) {
       this.setState({ laoding: false, error: error });
     }
@@ -77,6 +79,7 @@ class NewBadge extends React.Component {
             </div>
           </div>
         </div>
+        {/* <Footer s={{bottom:0}}></Footer> */}
       </React.Fragment>
     );
   }
