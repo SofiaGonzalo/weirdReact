@@ -17,11 +17,39 @@
 }
 
 .Button:hover{
-    background-color: white;
-    border: 2px solid #e42751;
+    background-color: rgba( 25, 22, 41 , 0.4);
+    border: 2px solid #0a559d ;
     font-weight: bold;
 }
 
 .Button:hover p{
-    color: #e42751;
+    color: #0a559d ;
+}
+
+.Button-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid  #f0efe1;
+    border-radius: 40px;
+    margin-top: 2em;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Button-ight p{
+    color: #191629;
+    font-size: 1.2em;
+    margin: 8px 60px;
+    padding-bottom: 5px;
+}
+
+.Button-light:hover{
+    background-color: #191629;
+    border: 2px solid transparent ;
+    font-weight: bold;
+}
+
+.Button-light:hover p{
+    color: white;
 }
