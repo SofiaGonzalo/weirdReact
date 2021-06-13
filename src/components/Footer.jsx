@@ -1,14 +1,14 @@
-import React from "react"
-import "./style/Footer.css"
+import React from "react";
+import "./style/Footer.css";
 
-const Footer = () =>{
-    return(
-        <React.Fragment>
-            <div className="Footer">
-                <p>Example very epic ☺</p>
-            </div>
-        </React.Fragment>
-    );
-}
+const Footer = (props) => {
+  return (
+    <React.Fragment>
+      <div className="Footer" style={props.s}>
+        <p>Example very epic ☺</p>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default Footer;
