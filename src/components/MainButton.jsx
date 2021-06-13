@@ -5,7 +5,7 @@ import "./style/MainButton.css"
 const Button = props => {
     return(
         <React.Fragment>
-            <Link className="Button" to={props.Link}>
+            <Link className={props.theme} to={props.Link}>
                 <p>{props.contentText}</p>
             </Link>
         </React.Fragment>
