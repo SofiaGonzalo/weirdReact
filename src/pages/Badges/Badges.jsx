@@ -53,9 +53,13 @@ class Badges extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="Badges__caontainer">
+        <div className="Badges__container">
           <div className="Badges__button">
-            <Button></Button>
+            <Button
+              theme={"Button-light"}
+              contentText = {"New Badge"}
+              link = {"/new"} // link not working
+            >New Badge</Button>
           </div>
         </div>
         <BadgesList badges={this.state.data}></BadgesList>
