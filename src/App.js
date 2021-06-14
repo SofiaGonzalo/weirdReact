@@ -8,6 +8,7 @@ import login from "./pages/login/login"
 import signUp from "./pages/signup/signup"
 import notFound from "./pages/notFound/notFound"
 import Badges from "./pages/Badges/Badges"
+import BadgeDetails from "./components/BadgeDetails"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/log" component={login}></Route>
           <Route exact path="/sign" component={signUp}></Route>
           <Route exact path="/badges" component={Badges}></Route>
+          <Route exact path="/:badgeId" component={BadgeDetails}></Route>
           <Route component={notFound}></Route>
         </Switch>
       </Layout>
