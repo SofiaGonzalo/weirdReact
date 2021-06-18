@@ -1,5 +1,5 @@
 import React from "react"
-import "./Main.css"
+import "./Landing.css"
 import Hero from "../../components/Hero"
 import Button from "../../components/MainButton"
 import Footer from "../../components/Footer"
