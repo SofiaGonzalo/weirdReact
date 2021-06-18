@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "./pages/layout/Layout";
-import Main from "../src/pages/main/Main";
+import Main from "./pages/main/Main";
 import NewBadge from "./pages/NewBadge/NewBadge";
 import login from "./pages/login/login"
 import signUp from "./pages/signup/signup"
